@@ -18,10 +18,7 @@ const loadFiles = async () => {
   );
   const smallCodePath = path.join(
     __dirname,
-    "../public",
-    "cpt_codes",
-    "json",
-    "IPT Codes - Codes3 icd10pcs_codes_2024.json"
+    "../public/cpt_codes/json/IPT Codes - Codes3 icd10pcs_codes_2024.json"
   );
 
   const smallcodes = await fs.promises.readFile(smallCodePath);
