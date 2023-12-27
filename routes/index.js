@@ -25,11 +25,11 @@ const loadFiles = async () => {
   );
 
   const smallcodes = await fs.promises.readFile(smallCodePath);
-  const smallresp = await smallcodes.toString();
+  const smallresp = smallcodes.toString();
   smallparsed = JSON.parse(smallresp);
 
   const codes = await fs.promises.readFile(codePath);
-  const resp = await codes.toString();
+  const resp = codes.toString();
   parsed = JSON.parse(resp);
 
   return { smallparsed, parsed };
